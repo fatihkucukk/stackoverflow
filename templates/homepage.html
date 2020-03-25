@@ -1,0 +1,363 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <html class="html__responsive"><head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+        <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+        <meta name="description" content="Stack Overflow is the largest, most trusted online community for developers to learn, share&#8203; &#8203;their programming &#8203;knowledge, and build their careers.">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://stackoverflow.com/">
+        <meta property="og:site_name" content="Stack Overflow">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:domain" content="stackoverflow.com">
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers">
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow | The World’s Largest Online Community for Developers">
+
+        <script src="https://cdn.ampproject.org/rtv/032002112037430/amp4ads-host-v0.js"></script><script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2020013001.js"></script><script src="https://rules.quantcount.com/rules-p-c1rF4kxgLUzNc.js" async=""></script><script async="" src="https://secure.quantserve.com/quant.js"></script><script async="" src="https://sb.scorecardresearch.com/beacon.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.sstatic.net/Js/stub.en.js?v=b56920fb2003"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=f6dc2e55f461">
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=2066733ae8af">
+
+
+    <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+
+
+        <script>
+        StackExchange.init({"locale":"en","serverTime":1581688014,"routeName":"Home/Index","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"childUrl":"https://meta.stackoverflow.com","negativeVoteScoreFloor":null,"enableSocialMediaInSharePopup":true,"protocol":"https"},"user":{"fkey":"9397d31c45dfdf11e8f80398635fe2f4971d184e18c4ef5c537cc2b39286b0b8","tid":"f15d0a55-8cf4-d732-951c-7417ca94400f","rep":1,"isRegistered":true,"userType":3,"userId":12838998,"accountId":17686084,"gravatar":"<div class=\"gravatar-wrapper-32\"><img src=\"https://www.gravatar.com/avatar/61d9242b91d0968c655886ce613d2c47?s=32&amp;d=identicon&amp;r=PG&amp;f=1\" alt=\"\" width=\"32\" height=\"32\" class=\"bar-sm\"></div>","profileUrl":"https://stackoverflow.com/users/12838998/fatihkucukk","canSeeDeletedPosts":false},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75,"likedTagsMaxLength":300,"dislikedTagsMaxLength":300},"jobPreferences":{"maxNumDeveloperRoles":2,"maxNumIndustries":4},"svgIconPath":"https://cdn.sstatic.net/Img/svg-icons","svgIconHash":"db6a9bf1709e"}, {"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{},"tags":{},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"slack":{"sidebarAdDismissCookie":"slack-sidebar-ad"},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"asteriskIntraWordEmphasis":true},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"4db2539d53b0","js/moderator.en.js":"3b46936ecdf0","js/full-anon.en.js":"032602177ec2","js/full.en.js":"c2a669143177","js/wmd.en.js":"8107551168b4","js/mobile.en.js":"a168d277c579","js/help.en.js":"c8062454a840","js/tageditor.en.js":"578260bfe204","js/tageditornew.en.js":"25853692804a","js/inline-tag-editing.en.js":"4e684c7fc0bc","js/revisions.en.js":"b4bb45bdbce7","js/review.en.js":"d558d6e6a143","js/tagsuggestions.en.js":"9b2c5d9791d2","js/post-validation.en.js":"aed83cdcffa2","js/explore-qlist.en.js":"8498d0bb288b","js/events.en.js":"c8ca6d8ce654","js/keyboard-shortcuts.en.js":"0771784f10fe","js/adops.en.js":"6b9883f0531e","js/begin-edit-event.en.js":"7f52eac9bfd0","js/ask.en.js":"e4dd8c66240e","js/question-editor.en.js":"","js/snippet-javascript-codemirror.en.js":"2fdc2daad3f4"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    <noscript id="noscript-css"><style>body,.top-bar{margin-top:1.9em}</style></noscript>
+    <script async="" src="https://cdn.sstatic.net/Js/full.en.js?v=c2a669143177"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><link rel="preload" href="https://adservice.google.com.tr/adsid/integrator.js?domain=stackoverflow.com" as="script"><script type="text/javascript" src="https://adservice.google.com.tr/adsid/integrator.js?domain=stackoverflow.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=stackoverflow.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=stackoverflow.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020013001.js" async=""></script><link rel="stylesheet" href="https://cdn.sstatic.net/clc/styles/clc.min.css?v=c4f5b80d56c6" type="text/css"><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head>
+        <body class="home-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<header class="top-bar js-top-bar top-bar__network _fixed">
+    <div class="wmx12 mx-auto grid ai-center h100" role="menubar">
+        <div class="-main grid--cell">
+                <a href="#" class="left-sidebar-toggle p0 ai-center jc-center js-left-sidebar-toggle" role="menuitem" aria-haspopup="true" aria-controls="left-sidebar" aria-expanded="false"><span class="ps-relative"></span></a>
+                <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno">
+                    <div class="left-sidebar js-unpinned-left-sidebar" data-can-be="left-sidebar" data-is-here-when="sm"></div>
+                </div>
+                                <a href="" class="-logo js-gps-track" data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                        <span class="-img _glyph">Stack Overflow</span>
+                    </a>
+
+
+
+        </div>
+
+
+            <div class="s-popover ws2 p6" id="products-popover" role="menu" aria-hidden="true">
+                <div class="s-popover--arrow"></div>
+                <ol class="list-reset s-anchors s-anchors__inherit">
+                    <li>
+                        <a href="/" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:2})" data-ga="[&quot;top navigation&quot;,&quot;public qa submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Stack Overflow</span>
+                            <span class="fs-caption d-block o70">Public questions and answers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/teams" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:3})" data-ga="[&quot;top navigation&quot;,&quot;teams submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Teams</span>
+                            <span class="fs-caption d-block o70">Private questions and answers for your team</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/enterprise" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:4})" data-ga="[&quot;top navigation&quot;,&quot;enterprise submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Enterprise</span>
+                            <span class="fs-caption d-block o70">Private self-hosted questions and answers for your enterprise</span>
+                        </a>
+                    </li>
+                    <li class="bt bc-black-3 mln6 mrn6 mt6 pt6 px6">
+                        <a href="https://stackoverflow.com/talent" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:5})" data-ga="[&quot;top navigation&quot;,&quot;talent submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Talent</span>
+                            <span class="fs-caption d-block o70">Hire technical talent</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/advertising" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:6})" data-ga="[&quot;top navigation&quot;,&quot;advertising submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Advertising</span>
+                            <span class="fs-caption d-block o70">Reach developers worldwide</span>
+                        </a>
+                    </li>
+
+                        <li class="bt bc-black-3 mln6 mrn6 mt6 pt6 px6">
+                            <a href="/teams/customers" class="fc-light d-block py6 px6 h:fc-orange-500 js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:7})" data-ga="[&quot;top navigation&quot;,&quot;customers submenu click&quot;,null,null,null]">Customers</a>
+                        </li>
+                        <li class="">
+                            <a href="/teams/use-cases" class="fc-light d-block py6 px6 h:fc-orange-500 js-gps-track" data-gps-track="top_nav.products.click({location:1, destination:8})" data-ga="[&quot;top navigation&quot;,&quot;use cases submenu click&quot;,null,null,null]">Use cases</a>
+                        </li>
+                </ol>
+            </div>
+
+
+    </div>
+</header>
+
+    <script>
+        StackExchange.ready(function () { StackExchange.topbar.init(); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+            StackExchange.Notice.announcementBannerInit();
+        });
+    </script>
+
+
+
+
+
+    <div class="container">
+
+
+
+
+        <div id="content" class="snippet-hidden">
+
+
+
+
+<div id="mainbar">
+
+
+
+
+        <div class="grid">
+            <h1 class="grid--cell fl1 fs-headline1">
+                    Top Questions
+            </h1>
+            <div class="ml12 aside-cta grid--cell print:d-none">
+
+    <a href="{% url 'soru_olustur' %}" class="ws-nowrap s-btn s-btn__primary" method="POST">
+        Soru Sor
+    </a>
+
+            </div>
+        </div>
+        <div class="grid ai-center mb16">
+            <div class="grid--cell fl1 fs-body3"></div>
+            <div class="grid--cell">
+
+<div class="grid s-btn-group js-filter-btn">
+        <a class="youarehere is-selected grid--cell s-btn s-btn__muted s-btn__outlined" href="?tab=interesting" data-nav-xhref="" title="Questions that may be of interest to you based on your history and tag preference" data-value="interesting" data-shortcut="">
+            Interesting</a>
+        <a class="grid--cell s-btn s-btn__muted s-btn__outlined" href="?tab=bounties" data-nav-xhref="" title="Questions with an active bounty" data-value="bounties" data-shortcut="B">
+<span class="bounty-indicator-tab">415</span>            Bountied</a>
+        <a class="grid--cell s-btn s-btn__muted s-btn__outlined" href="?tab=hot" data-nav-xhref="" title="Questions with the most views, answers, and votes over the last few days" data-value="hot" data-shortcut="H">
+            Hot</a>
+        <a class="grid--cell s-btn s-btn__muted s-btn__outlined" href="?tab=week" data-nav-xhref="" title="Questions with the most views, answers, and votes this week" data-value="week" data-shortcut="W">
+            Week</a>
+        <a class="grid--cell s-btn s-btn__muted s-btn__outlined" href="?tab=month" data-nav-xhref="" title="Questions with the most views, answers, and votes this month" data-value="month" data-shortcut="M">
+            Month</a>
+    </div>
+
+            </div>
+        </div>
+
+
+<div id="qlist-wrapper" class="flush-left">
+    <div id="question-mini-list">
+        <div>
+        {% for question in questions %}
+            <div class="question-summary narrow" id="question-summary-60227578">
+                <div onclick="window.location.href='{& url 'soru_cevap' &}' class="cp"">
+                    <div class="votes">
+                        <div class="mini-counts"><span title="oy">{{ cevap.get_oy_count }}</span></div>
+                        <div>oy</div>
+                    </div>
+                    <div class="status unanswered">
+                        <div class="mini-counts"><span title="yanıt">{{ cevap.get_oy_count }}</span></div>
+                        <div>yanıtlar</div>
+                    </div>
+                    <div class="views">
+                        <div class="mini-counts"><span title="görüntülenme">{{ cevap.get_oy_count }}</span></div>
+                        <div>görüntülenme</div>
+                    </div>
+                </div>
+                <div class="summary">
+
+
+                    <h3><a href="{% url 'soru_detay' id=question.id %}" class="question-hyperlink">{{question.title}}</a></h3>
+                    <div class="tags t-postgresql t-jsonb">
+                        <a href="{% url 'soru_detay' id=question.id %}" class="post-tag" title="" rel="tag">{{question.title}}</a> <a href="{% url 'soru_detay' id=question.id %}" title="show questions tagged 'jsonb'" rel="tag">{{question.title}}</a>
+                    </div>
+                    <div class="started">
+                        <a href="/questions/60227578/postgres-jsonb-cast-array-element-to-integer" class="started-link">asked <span title="2020-02-14 13:46:00Z" class="relativetime">{{ question.created_date }}</span></a>
+                        <a href="/users/12898759/louis">{{ question.author }}</a> <span class="reputation-score" title="reputation score " dir="ltr">1</span>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+    <br class="cbt">
+    <h2 class="bottom-notice" data-loc="2">Looking for more? Browse the <a href="/questions">complete list of questions</a>, or <a href="/tags">popular tags</a>. Help us answer <a href="/unanswered">unanswered questions</a>.</h2>
+<script>
+    StackExchange.ready(function() { StackExchange.question.initShareLinks(); });
+</script>
+
+</div>
+
+
+
+                <script type="text/html" class="js-tag-template"><div class="js-tag grid--cell "><a href="/questions/tagged/template" class="post-tag" title="show questions tagged &#39;template&#39;" rel="tag">template</a></div></script>
+
+            </div>
+
+
+
+
+            <div class="js-ignored-edit-visible mt8 d-none">
+
+                <div class="grid ai-center">
+                    <div class="grid--cell mr8"><input type="radio" name="hideIgnored" class="js-hide-ignored s-radio" id="efb24fd4-bec3-46ad-89de-437a7e452dc9-on"></div>
+                    <label for="efb24fd4-bec3-46ad-89de-437a7e452dc9-on" class="grid--cell s-label fs-body1 fw-normal">Hide questions in your ignored tags</label>
+                </div>
+                <div class="grid ai-center">
+                    <div class="grid--cell mr8"><input type="radio" name="hideIgnored" class="js-dim-ignored s-radio" id="efb24fd4-bec3-46ad-89de-437a7e452dc9-off" checked="checked"></div>
+                    <label for="efb24fd4-bec3-46ad-89de-437a7e452dc9-off" class="grid--cell s-label fs-body1 fw-normal">Gray out questions in your ignored tags</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    StackExchange.ready(function() {
+        StackExchange.tagPreferences.applyPrefs(true, [], undefined);
+    });
+</script><style>.everyoneloves__top-leaderboard:empty,.everyoneloves__mid-leaderboard:empty,.everyoneloves__bot-mid-leaderboard:empty{
+            margin-bottom:0;
+}
+</style>
+
+    <div id="feed-link" class="js-feed-link">
+        <a href="/feeds" title="The 30 most recent questions">
+            <svg aria-hidden="true" class="svg-icon fc-orange-400 iconRss" width="18" height="18" viewBox="0 0 18 18"><path d="M1 3c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3zm14.5 12C15.5 8.1 9.9 2.5 3 2.5V5a10 10 0 0 1 10 10h2.5zm-5 0A7.5 7.5 0 0 0 3 7.5V10a5 5 0 0 1 5 5h2.5zm-5 0A2.5 2.5 0 0 0 3 12.5V15h2.5z"></path></svg>
+            Recent questions feed
+        </a>
+    </div>
+    <aside class="s-modal js-feed-link-modal" tabindex="-1" role="dialog" aria-labelledby="feed-modal-title" aria-describedby="feed-modal-description" aria-hidden="true">
+        <div class="s-modal--dialog js-modal-dialog wmx4" role="document" data-controller="se-draggable">
+            <h1 class="s-modal--header fw-bold js-first-tabbable c-move" id="feed-modal-title" data-target="se-draggable.handle" tabindex="0">
+                Subscribe to RSS
+            </h1>
+            <div class="grid gs4 gsy fd-column">
+                <div class="grid--cell">
+                    <label class="d-block s-label c-default" for="feed-url">
+                        Recent questions feed
+                        <p class="s-description mt2" id="feed-modal-description">To subscribe to this RSS feed, copy and paste this URL into your RSS reader.</p>
+                    </label>
+                </div>
+                <div class="grid ps-relative">
+                    <input class="s-input" type="text" name="feed-url" id="feed-url" readonly="readonly" value="https://stackoverflow.com/feeds">
+                    <svg aria-hidden="true" class="svg-icon s-input-icon fc-orange-400 iconRss" width="18" height="18" viewBox="0 0 18 18"><path d="M1 3c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3zm14.5 12C15.5 8.1 9.9 2.5 3 2.5V5a10 10 0 0 1 10 10h2.5zm-5 0A7.5 7.5 0 0 0 3 7.5V10a5 5 0 0 1 5 5h2.5zm-5 0A2.5 2.5 0 0 0 3 12.5V15h2.5z"></path></svg>
+                </div>
+            </div>
+            <a class="s-modal--close s-btn s-btn__muted js-modal-close js-last-tabbable" href="#" aria-label="Close">
+                <svg aria-hidden="true" class="svg-icon iconClearSm" width="14" height="14" viewBox="0 0 14 14"><path d="M12 3.41L10.59 2 7 5.59 3.41 2 2 3.41 5.59 7 2 10.59 3.41 12 7 8.41 10.59 12 12 10.59 8.41 7 12 3.41z"></path></svg>
+            </a>
+        </div>
+    </aside>
+    </div>
+
+        </div>
+    </div>
+
+
+<script>;try{(function(a){function b(a){return'string'==typeof a?document.getElementById(a):a}function c(a){return a=b(a),!!a&&'none'===getComputedStyle(a).display}function d(a){return!c(a)}function e(a){return!!a}function f(a){return /^\s*$/.test(b(a).innerHTML)}function g(a){var b=a.style;b.height=b.maxHeight=b.minHeight='auto',b.display='none',[].forEach.call(a.children,g)}function h(a,b){var c;return function(){return a&&(c=a.call(b||this,arguments),a=null),c}}function i(a){var b=document.createElement('script');b.src=a,document.body.appendChild(b)}function j(a){return k([],a)}function k(a,b){return a.push=function(a){return b(),delete this.push,this.push(a)},a}function l(){try{return!new Function('return async()=>{};')}catch(a){return!0}}function m(){return'undefined'!=typeof googletag&&!!googletag.apiReady}function n(){m()||(googletag={cmd:j(A)})}function o(){var a=document.createElement('div');a.className='adsbox',a.id='clc-abd',a.style.position='absolute',a.style.pointerEvents='none',a.innerHTML='&nbsp;',document.body.appendChild(a)}function p(){return Object.keys(E.ids)}function r(a){var b=E.ids[a],c=E.slots[b];'function'==typeof c&&(c=c(a));return{path:'/'+B+'/'+D+'/'+b+'/'+C,sizes:c,zone:b}}function q(a){var b=a.serviceName,c=a.slot,d=a.lineItemId;try{var e=c.getSlotElementId(),f=[];e||f.push('id=0');var h=document.getElementById(e);if(!e||h?h.hasAttribute('data-clc-stalled')&&f.push('st=1'):f.push('el=0'),0!==f.length)return void F(f.join('&'));var i=r(e),j=i.zone;if(clc.collapse&&clc.collapse[j]&&!d)return void g(h);if(-1!==x.dh.indexOf(d))g(h);else if(d&&(h.setAttribute('data-clc-prefilled','true'),'dfp-msb'==e)){var k=document.getElementById('hireme');g(k)}h.setAttribute('data-clc-ready','true')}catch(a){var l=document.querySelector('#dfp-tsb, #dfp-isb, #clc-tsb');l&&l.setAttribute('data-clc-ready','true'),F('e=1')}}function s(a){return!(clc.collapse&&void 0!==clc.collapse[a])||!!clc.collapse[a]}function t(a,b){'dfp-isb'===a&&b.setTargeting('Sidebar',['Inline']),'dfp-tsb'===a&&b.setTargeting('Sidebar',['Right']);var c=r(a),d=c.path,e=c.sizes,f=c.zone,g=googletag.defineSlot(d,e,a);if(s(f)){var h=!x.ll;g.setCollapseEmptyDiv(!0,h)}g.addService(b),!1}function u(b){var c=a.dfp&&a.dfp.targeting||{};Object.keys(c).forEach(function(a){b.setTargeting(a,c[a])})}function v(a){var g=a.map(b).filter(e);return{eligible:g.filter(f).filter(d),ineligible:g.filter(c)}}function w(b){if(void 0===b&&(b=p()),!m())return n(),void googletag.cmd.push(function(){return w(b)});var c=v(b),d=c.eligible,e=c.ineligible;if(e.forEach(g),0!==d.length){x.abd&&o(),googletag.destroySlots();var f=googletag.pubads();x.sf&&(f.setForceSafeFrame(!0),f.setSafeFrameConfig({allowOverlayExpansion:!0,allowPushExpansion:!0,sandbox:!0})),x.ll&&f.enableLazyLoad({fetchMarginPercent:0,renderMarginPercent:0}),a.sreEvent||(f.addEventListener('slotRenderEnded',q),a.sreEvent=!0),u(f),d.forEach(function(a){t(a.id,f),a.setAttribute('data-dfp-zone','true')}),googletag.enableServices(),d.forEach(function(a){googletag.display(a.id)})}}var x=function(a){for(var b=[],c=1;c<arguments.length;c++)b[c-1]=arguments[c];for(var d,e=0,f=b;e<f.length;e++)for(var g in d=f[e],d)a[g]=d[g];return a}({"lib":"https://cdn.sstatic.net/clc/clc.min.js?v=d86ede4e666e","style":"https://cdn.sstatic.net/clc/styles/clc.min.css?v=c4f5b80d56c6","u":"https://clc.stackoverflow.com/markup.js","wa":true,"kt":2000,"tto":true,"h":"clc.stackoverflow.com","allowed":"^(((talent\\.)?stackoverflow)|(blog\\.codinghorror)|(serverfault|askubuntu)|([^\\.]+\\.stackexchange))\\.com$","wv":true,"al":false,"dh":[5171832659],"abd":true},a.options||{}),y=h(function(){var a=x.lib;l()&&(a=a.replace(/(\.min)?\.js(\?v=[0-9a-fA-F]+)?$/,'.ie$1.js$2')),i(a)}),z=a.cmd||[];Array.isArray(z)&&(0<z.length?y():k(z,y));var A=h(function(){i('https://www.googletagservices.com/tag/js/gpt.js')}),B='248424177',C=/^\/tags\//.test(location.pathname)||/^\/questions\/tagged\//.test(location.pathname)?'tag-pages':/^\/$/.test(location.pathname)||/^\/home/.test(location.pathname)?'home-page':'question-pages',D=location.hostname;var E={slots:{lb:[[728,90]],mlb:[[728,90]],smlb:[[728,90]],bmlb:[[728,90]],sb:function(a){return'dfp-tsb'===a?[[300,250],[300,600]]:[[300,250]]},"tag-sponsorship":[[730,135]],"mobile-below-question":[[320,50],[300,250]],msb:[[300,250],[300,600]]},ids:{"dfp-tlb":'lb',"dfp-mlb":'mlb',"dfp-smlb":'smlb',"dfp-bmlb":'bmlb',"dfp-tsb":'sb',"dfp-isb":'sb',"dfp-tag":'tag-sponsorship',"dfp-msb":'msb',"dfp-m-aq":'mobile-below-question',"clc-tlb":'lb',"clc-mlb":'mlb',"clc-tsb":'sb'}},F=function(a){new Image().src='https://'+x.h+'/stalled.gif?'+a};(function(){var b=x.al;b&&z.push(function(){return a.load()})})(),n(),a.dfp={load:w},a.options=x,a.cmd=z})(this.clc=this.clc||{})}catch(a){window.console.error(a)}</script>    <script>
+        var clc = clc || {};
+        clc.collapse = { sb: !0, 'tag-sponsorship': !0, lb:!0, mlb:!0, smlb:!0, bmlb:!0, 'mobile-below-question':!0};
+        clc.options = clc.options || {};
+        clc.options.sf = !0;
+        clc.options.hb = !1;
+        clc.options.ll = !1;
+        clc.cmd = clc.cmd || [];
+        clc.cmd.push(function () { window.clc_request='ApjYH1pUsdcIRN4NAQAAAAACAAAAAQAAAAMAAAAAAGglnkWSSotxd3U'; clc.load(); });
+                clc.dfp = clc.dfp || {};
+        clc.dfp.targeting = {Registered:['true']};
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        googletag.cmd.push(function () { clc.dfp.load(); });
+    </script><script src="https://cdn.sstatic.net/clc/clc.min.js?v=d86ede4e666e"></script><script src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+
+
+            <script>StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })</script>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled
+            <img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno">
+        </div>
+    </noscript>
+
+<script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ],
+                        checkDimension: 'dimension42'
+                });
+
+                    StackExchange.ga.setDimension('dimension1', '17686084');
+
+                    StackExchange.ga.setDimension('dimension10', 'ActivelyLooking');
+
+
+                    StackExchange.ga.setDimension('dimension3', 'Home/Index');
+
+
+                StackExchange.ga.trackPageView();
+            });
+
+/**/
+
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+
+</script>
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Çeviri"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Orijinal metin</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Daha iyi bir çeviri ile katkıda bulunun</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe id="google_osd_static_frame_3944153310908" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>
+{% endblock content %}

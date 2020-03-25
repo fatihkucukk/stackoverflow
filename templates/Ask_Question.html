@@ -1,0 +1,792 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <html class="html__responsive html__unpinned-leftnav translated-ltr">
+    <head>
+
+        <title>Soru Sorun - Yığın Taşması</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+        <link rel="apple-touch-icon"
+              href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src"
+              href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="search" type="application/opensearchdescription+xml" title="Yığın Taşması" href="/opensearch.xml">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+
+        <script src="https://rules.quantcount.com/rules-p-c1rF4kxgLUzNc.js" async=""></script>
+        <script async="" src="https://secure.quantserve.com/quant.js"></script>
+        <script async="" src="https://sb.scorecardresearch.com/beacon.js"></script>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.sstatic.net/Js/stub.en.js?v=2b995191bf00"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=f6dc2e55f461">
+        <link rel="stylesheet" type="text/css"
+              href="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=063f5d9e2e8f">
+        <link rel="stylesheet" type="text/css"
+              href="https://cdn.sstatic.net/Sites/stackoverflow/secondary.css?v=9605d4678cb8">
+
+
+        <script src="https://cdn.sstatic.net/Js/ask.en.js?v=e4dd8c66240e"></script>
+
+        <noscript id="noscript-css">
+            <style>body, .top-bar {
+                margin-top: 1.9em
+            }</style>
+        </noscript>
+        <script async="" src="https://cdn.sstatic.net/Js/full.en.js?v=ba74c63ca5ee"></script>
+        <script async="" src="https://cdn.sstatic.net/Js/tageditornew.en.js?v=98de87172bd5"></script>
+        <link type="text/css" rel="stylesheet" charset="UTF-8"
+              href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+        <script async="" src="https://cdn.sstatic.net/Js/tagsuggestions.en.js?v=a9ff449efcdc"></script>
+        <script async="" src="https://cdn.sstatic.net/Js/wmd.en.js?v=2146bef06151"></script>
+        <script async="" src="https://cdn.sstatic.net/Js/begin-edit-event.en.js?v=8f05bb4ed432"></script>
+        <style type="text/css"> .wmd-snippet-button span {
+            background-position: 0 0;
+        }
+
+        .wmd-snippet-button:hover span {
+            background-position: 0 -40px;
+        }</style>
+    </head>
+    <body class="ask-page unified-theme js-ask-page-v2 bg-black-050">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+    <header class="top-bar js-top-bar top-bar__network _fixed">
+        <div class="wmx12 mx-auto grid ai-center h100" role="menubar">
+            <div class="-main grid--cell">
+                <a href="#" class="left-sidebar-toggle p0 ai-center jc-center js-left-sidebar-toggle" role="menuitem"
+                   aria-haspopup="true" aria-controls="left-sidebar" aria-expanded="false"><span
+                        class="ps-relative"></span></a>
+                <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno">
+                    <div class="left-sidebar js-unpinned-left-sidebar" data-is-here-when="sm md lg" id="left-sidebar">
+                        <div class="left-sidebar--sticky-container js-sticky-leftnav">
+                            <nav role="navigation">
+                                <ol class="nav-links">
+                                    <li>
+                                        <a href="/" class="pl8 js-gps-track nav-links--link"
+                                           data-gps-track="top_nav.click({is_current:false, location:3, destination:8})"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            Ev </font></font></a>
+                                    </li>
+                                    <li>
+                                        <ol class="nav-links">
+                                            <li class="fs-fine tt-uppercase ml8 mt16 mb4 fc-light"><font
+                                                    style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">halka açık</font></font></li>
+                                            <li>
+                                                <a id="nav-questions" href="/questions"
+                                                   class="pl8 js-gps-track nav-links--link -link__with-icon"
+                                                   data-gps-track="top_nav.click({is_current:false, location:3, destination:1})">
+                                                    <svg aria-hidden="true" class="svg-icon iconGlobe" width="18"
+                                                         height="18" viewBox="0 0 18 18">
+                                                        <path d="M9 1a8 8 0 1 0 0 16A8 8 0 0 0 9 1zM8 15.32a6.4 6.4 0 0 1-5.23-7.75L7 11.68v.8c0 .88.12 1.32 1 1.32v1.52zm5.72-2c-.2-.66-1-1.32-1.72-1.32h-1v-2c0-.44-.56-1-1-1H6V7h1c.44 0 1-.56 1-1V5h2c.88 0 1.4-.72 1.4-1.6v-.33a6.4 6.4 0 0 1 2.32 10.24v.01z"></path>
+                                                    </svg>
+                                                    <span class="-link--channel-name"><font
+                                                            style="vertical-align: inherit;"><font
+                                                            style="vertical-align: inherit;">Yığın Taşması</font></font></span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a id="nav-tags" href="/tags" class=" js-gps-track nav-links--link"
+                                                   data-gps-track="top_nav.click({is_current:false, location:3, destination:2})"><font
+                                                        style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">
+                                                    Etiketler </font></font></a>
+                                            </li>
+                                            <li>
+                                                <a id="nav-users" href="/users" class=" js-gps-track nav-links--link"
+                                                   data-gps-track="top_nav.click({is_current:false, location:3, destination:3})"><font
+                                                        style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">
+                                                    Kullanıcılar </font></font></a>
+                                            </li>
+                                            <li>
+                                                <a id="nav-jobs"
+                                                   href="/jobs?so_medium=StackOverflow&amp;so_source=SiteNav"
+                                                   class=" js-gps-track nav-links--link"
+                                                   data-gps-track="top_nav.click({is_current:false, location:3, destination:6})"><font
+                                                        style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">
+                                                    Meslekler </font></font></a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <ol class="nav-links">
+                                            <li class="grid ai-center jc-space-between ml8 mt24 mb4">
+                                                <div class="grid--cell tt-uppercase fs-fine fc-light"><font
+                                                        style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">Takımlar</font></font></div>
+                                                <div class="grid--cell fs-fine fc-light mr4">
+                                                    <a href="javascript:void(0)"
+                                                       class="s-link s-link__inherit js-gps-track" role="button"
+                                                       aria-controls="popover-teams-create-cta"
+                                                       data-controller="s-popover" data-action="s-popover#toggle"
+                                                       data-s-popover-placement="bottom-start"
+                                                       data-s-popover-toggle-class="is-selected"
+                                                       data-gps-track="teams.create.left-sidenav.click({ Action: ShowInfo })"
+                                                       data-ga="[&quot;teams left navigation&quot;,&quot;left nav show teams info&quot;,null,null,null]"><font
+                                                            style="vertical-align: inherit;"><font
+                                                            style="vertical-align: inherit;">
+                                                        Bu nedir?
+                                                    </font></font></a>
+
+                                                </div>
+                                            </li>
+                                            <li class="ps-relative">
+                                                <a href="https://stackoverflow.com/teams"
+                                                   class="pl8 js-gps-track nav-links--link"
+                                                   title="Stack Overflow for Teams is a private, secure spot for your organization's questions and answers."
+                                                   data-gps-track="teams.create.left-sidenav.click({ Action: TeamsClick })"
+                                                   data-ga="[&quot;teams left navigation&quot;,&quot;left nav team click&quot;,&quot;stackoverflow.com/teams&quot;,null,null]">
+                                                    <div class="grid ai-center">
+                                                        <div class="grid--cell s-avatar va-middle bg-orange-400">
+                                                            <div class="s-avatar--letter mtn1">
+                                                                <svg aria-hidden="true" class="svg-icon iconBriefcaseSm"
+                                                                     width="14" height="14" viewBox="0 0 14 14">
+                                                                    <path d="M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 0 1 2 10.5v-5C2 4.67 2.67 4 3.5 4H4V3zm5 1V3H5v1h4z"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <svg aria-hidden="true"
+                                                                 class="svg-icon native s-avatar--badge iconShieldXSm"
+                                                                 width="9" height="10" viewBox="0 0 9 10">
+                                                                <path d="M0 1.84L4.5 0 9 1.84v3.17C9 7.53 6.3 10 4.5 10 2.7 10 0 7.53 0 5.01V1.84z"
+                                                                      fill="#fff"></path>
+                                                                <path d="M1 2.5L4.5 1 8 2.5v2.51C8 7.34 5.34 9 4.5 9 3.65 9 1 7.34 1 5.01V2.5zm2.98 3.02L3.2 7h2.6l-.78-1.48a.4.4 0 0 1 .15-.38c.34-.24.73-.7.73-1.14 0-.71-.5-1.23-1.41-1.23-.92 0-1.39.52-1.39 1.23 0 .44.4.9.73 1.14.12.08.18.23.15.38z"
+                                                                      fill="#6A7E7C"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="grid--cell pl6">
+                                                            Free 30 Day Trial
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="s-popover w-auto p16" id="popover-teams-create-cta" role="menu" aria-hidden="true">
+                            <div class="s-popover--arrow"></div>
+
+                            <div class="ps-relative overflow-hidden">
+                                <p class="mb2"><strong>Teams</strong></p>
+                                <p class="mb16 fs-caption fc-medium">Q&amp;A for Work</p>
+                                <p class="mb8 fs-caption fc-medium">
+
+                                    Stack Overflow for Teams is a private, secure spot for you and
+                                    your coworkers to find and share information.
+
+                                </p>
+                                <a href="https://stackoverflow.com/teams" class="js-gps-track ws-nowrap d-block"
+                                   data-gps-track="teams.create.left-sidenav.click({ Action: CtaClick })"
+                                   data-ga="[&quot;teams left navigation&quot;,&quot;left nav cta&quot;,&quot;stackoverflow.com/teams&quot;,null,null]">
+                                    Learn more
+                                </a>
+                            </div>
+
+                            <div class="ps-absolute t8 r8">
+                                <svg width="53" height="49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M49 11l.2 31H18.9L9 49v-7H4V8h31" fill="#CCEAFF"></path>
+                                    <path d="M44.5 19v-.3l-.2-.1-18-13-.1-.1H.5v33h4V46l.8-.6 9.9-6.9h29.3V19z"
+                                          stroke="#1060E1" stroke-miterlimit="10"></path>
+                                    <path d="M31 2l6-1.5 7 2V38H14.9L5 45v-7H1V6h25l5-4z" fill="#fff"></path>
+                                    <path d="M7 16.5h13m-13 6h14m-14 6h18" stroke="#1060E1"
+                                          stroke-miterlimit="10"></path>
+                                    <path d="M39 30a14 14 0 1 0 0-28 14 14 0 0 0 0 28z" fill="#FFB935"></path>
+                                    <path d="M50.5 14a13.5 13.5 0 1 1-27 0 13.5 13.5 0 0 1 27 0z" stroke="#F48024"
+                                          stroke-miterlimit="10"></path>
+                                    <path d="M32.5 21.5v-8h9v8h-9zm2-9.5V9.3A2.5 2.5 0 0 1 37 6.8a2.5 2.5 0 0 1 2.5 2.5V12h-5zm2 3v2m1-2v2"
+                                          stroke="#fff" stroke-miterlimit="10"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="" class="-logo js-gps-track"
+                   data-gps-track="top_nav.click({is_current:false, location:3, destination:8})">
+                    <span class="-img _glyph"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">Yığın Taşması</font></font></span>
+                </a>
+
+
+            </div>
+
+            <ol class="list-reset grid gs4" role="presentation">
+                <li class="grid--cell">
+                    <a href="#" class="-marketing-link js-gps-track js-products-menu" aria-controls="products-popover"
+                       data-controller="s-popover" data-action="s-popover#toggle" data-s-popover-placement="bottom"
+                       data-gps-track="top_nav.products.click({location:3, destination:1})"
+                       data-ga="[&quot;top navigation&quot;,&quot;products menu click&quot;,null,null,null]"><font
+                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Ürün:% s
+                    </font></font></a>
+                </li>
+
+            </ol>
+            <div class="s-popover ws2 p6" id="products-popover" role="menu" aria-hidden="true">
+                <div class="s-popover--arrow"></div>
+                <ol class="list-reset s-anchors s-anchors__inherit">
+                    <li>
+                        <a href="/" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:2})"
+                           data-ga="[&quot;top navigation&quot;,&quot;public qa submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Stack Overflow</span>
+                            <span class="fs-caption d-block o70">Public questions and answers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/teams" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:3})"
+                           data-ga="[&quot;top navigation&quot;,&quot;teams submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Teams</span>
+                            <span class="fs-caption d-block o70">Private questions and answers for your team</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/enterprise" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:4})"
+                           data-ga="[&quot;top navigation&quot;,&quot;enterprise submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Enterprise</span>
+                            <span class="fs-caption d-block o70">Private self-hosted questions and answers for your enterprise</span>
+                        </a>
+                    </li>
+                    <li class="bt bc-black-3 mln6 mrn6 mt6 pt6 px6">
+                        <a href="https://stackoverflow.com/talent"
+                           class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:5})"
+                           data-ga="[&quot;top navigation&quot;,&quot;talent submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Talent</span>
+                            <span class="fs-caption d-block o70">Hire technical talent</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/advertising"
+                           class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:6})"
+                           data-ga="[&quot;top navigation&quot;,&quot;advertising submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Advertising</span>
+                            <span class="fs-caption d-block o70">Reach developers worldwide</span>
+                        </a>
+                    </li>
+
+                    <li class="bt bc-black-3 mln6 mrn6 mt6 pt6 px6">
+                        <a href="/teams/customers" class="fc-light d-block py6 px6 h:fc-orange-500 js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:7})"
+                           data-ga="[&quot;top navigation&quot;,&quot;customers submenu click&quot;,null,null,null]">Customers</a>
+                    </li>
+                    <li class="">
+                        <a href="/teams/use-cases" class="fc-light d-block py6 px6 h:fc-orange-500 js-gps-track"
+                           data-gps-track="top_nav.products.click({location:3, destination:8})"
+                           data-ga="[&quot;top navigation&quot;,&quot;use cases submenu click&quot;,null,null,null]">Use
+                            cases</a>
+                    </li>
+                </ol>
+            </div>
+
+            <form id="search" role="search" action="/search" method="get"
+                  class="grid--cell fl-grow1 searchbar px12 js-searchbar " autocomplete="off">
+                <div class="ps-relative">
+                    <input name="q" type="text" placeholder="Search…" value="" autocomplete="off" maxlength="240"
+                           class="s-input s-input__search js-search-field " aria-label="Arama"
+                           aria-controls="top-search" data-controller="s-popover" data-action="focus->s-popover#show"
+                           data-s-popover-placement="bottom-start">
+                    <svg aria-hidden="true" class="svg-icon s-input-icon s-input-icon__search iconSearch" width="18"
+                         height="18" viewBox="0 0 18 18">
+                        <path d="M18 16.5l-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0z"></path>
+                    </svg>
+                    <div class="s-popover p0 wmx100 wmn4 sm:wmn-initial js-top-search-popover s-popover--arrow__tl"
+                         id="top-search" role="menu">
+                        <div class="js-spinner p24 grid ai-center jc-center d-none">
+                            <div class="s-spinner s-spinner__sm fc-orange-400">
+                                <div class="v-visible-sr">Loading…</div>
+                            </div>
+                        </div>
+
+                        <span class="v-visible-sr js-screen-reader-info"></span>
+                        <div class="js-ac-results overflow-y-auto hmx3 d-none"></div>
+
+                        <div class="js-search-hints" aria-describedby="Tips for searching"></div>
+                    </div>
+                </div>
+            </form>
+
+
+
+    </header>
+
+    <script>
+        StackExchange.ready(function () {
+            StackExchange.topbar.init();
+        });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     </script>
+
+
+    <div class="container wmx12 bg-black-050">
+
+
+        <div data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative"
+             data-can-be="left-sidebar"></div>
+
+
+        <div id="content" class="wmx12 bg-black-050 pt0 snippet-hidden">
+
+
+            <div class="grid ai-center py24 bg-no-repeat bg-right-bottom wide:bg-image-ask-v2 wide:h-ask-v2-background">
+                <div class="fs-headline1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    Herkese açık bir soru sorun
+                </font></font></div>
+            </div>
+            <div class="md:d-block d-none mb24" data-controller="right-rail"
+                 data-action="s-expandable-control:show->right-rail#onShow s-expandable-control:hide->right-rail#onHide">
+                <div class="js-visible-before-review">
+                    <div class="s-sidebarwidget s-anchors mb0">
+                        <div class="s-sidebarwidget--header py0 bbr-sm js-widget-header">
+                            <button class="s-btn s-btn__unset grid ai-center w100 c-pointer py12 fs-body2 js-gps-track"
+                                    type="button" data-controller="s-expandable-control" aria-expanded="false"
+                                    aria-controls="mobile-ask-guidance-expandable"
+                                    data-gps-track="askpage.open_guidance_section({number: 1})">
+                                <div class="grid--cell fl1 ta-left">
+                                    Step 1: Draft your question
+                                </div>
+                                <div class="grid--cell">
+                                    <div class="js-arrow-down">
+                                        <svg aria-hidden="true" class="svg-icon iconArrowDownAlt" width="18" height="18"
+                                             viewBox="0 0 18 18">
+                                            <path d="M16.01 6.43l-1.4-1.41L9 10.6 3.42 5l-1.4 1.42 7 7 7-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="d-none js-arrow-up">
+                                        <svg aria-hidden="true" class="svg-icon iconArrowUpAlt" width="18" height="18"
+                                             viewBox="0 0 18 18">
+                                            <path d="M16.01 11.62l-1.4 1.4L9 7.45l-5.59 5.59-1.4-1.41 7-7 7 7z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="s-expandable" id="mobile-ask-guidance-expandable">
+                            <div class="s-expandable--content">
+                                <div class="s-sidebarwidget--content d-block pb0 bbr-sm bg-white"
+                                     data-can-be="how-to-ask" data-is-here-when="sm md"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-visible-during-review d-none">
+                    <div class="js-post-review-summary-container s-sidebarwidget s-anchors mb0">
+                        <div class="s-sidebarwidget--header py0 bbr-sm js-widget-header">
+                            <button class="s-btn s-btn__unset grid ai-center w100 c-pointer py12 fs-body2 js-gps-track"
+                                    type="button" data-controller="s-expandable-control" aria-expanded="true"
+                                    aria-controls="mobile-post-review-expandable">
+                                <div class="grid--cell fl1 ta-left">
+                                    Step 2: Review your question
+                                </div>
+                                <div class="grid--cell">
+                                    <div class="d-none js-arrow-down">
+                                        <svg aria-hidden="true" class="svg-icon iconArrowDownAlt" width="18" height="18"
+                                             viewBox="0 0 18 18">
+                                            <path d="M16.01 6.43l-1.4-1.41L9 10.6 3.42 5l-1.4 1.42 7 7 7-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="js-arrow-up">
+                                        <svg aria-hidden="true" class="svg-icon iconArrowUpAlt" width="18" height="18"
+                                             viewBox="0 0 18 18">
+                                            <path d="M16.01 11.62l-1.4 1.4L9 7.45l-5.59 5.59-1.4-1.41 7-7 7 7z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="s-expandable is-expanded" id="mobile-post-review-expandable">
+                            <div class="s-expandable--content">
+                                <div class="s-sidebarwidget--content d-block bbr-sm bg-white"
+                                     data-can-be="review-your-question" data-is-here-when="sm md"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid ai-start jc-space-between md:fd-column md:ai-stretch">
+                <div class="grid--cell fl1 wmn0">
+                    <form id="post-form" class="post-form js-post-form" action="{% url 'soru_olustur' %}" method="POST">
+                        {% csrf_token %}
+                    <div id="question-form">
+                        <div class="bg-white bar-sm bs-md p16">
+                            <div id="post-title" class="ps-relative mb16">
+                                <div class="grid fl1 fd-column js-stacks-validation">
+                                    <label class="d-block s-label mb4" for="title"><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        {{ form.title.label_tag }}
+                                    </font></font>
+                                        <p class="s-description mt2"><font style="vertical-align: inherit;"><font
+                                                style="vertical-align: inherit;">Net olun ve başka birine soru
+                                            sorduğunuzu hayal edin</font></font></p>
+                                    </label>
+                                    <div class="fl1 ps-relative">
+                                        <input id="title" name="title" type="text" maxlength="300" tabindex="100"
+                                               placeholder="e.g. Is there an R function for finding the index of an element in a vector?"
+                                               class="s-input js-post-title-field" value="" data-min-length="15"
+                                               data-max-length="150" autocomplete="off">
+                                    </div>
+                                    <div class="s-input-message mt4 d-none js-stacks-validation-message"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul>
+                            {% for post in object_list %}
+                                <li>{{ post.name }}</li>
+                            {% endfor %}
+                        </ul>
+                        <div id="post-editor" class="post-editor js-post-editor mt0 mb16">
+                            <div class="ps-relative">
+                                <label class="s-label mb4 d-block" for="wmd-input"><font
+                                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    {{ form.text.label_tag }}
+                                </font></font>
+                                    <p class="s-description mt2"><font style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">Birinin sorunuzu cevaplaması için ihtiyaç
+                                        duyacağı tüm bilgileri ekleyin</font></font></p>
+                                </label>
+                                <div class="wmd-container mb8">
+
+
+                                    <div class="js-stacks-validation">
+                                        <div class="ps-relative">
+                                            <textarea id="wmd-input" name="text"
+                                                      class="wmd-input s-input bar0 js-post-body-field processed"
+                                                      data-post-type-id="1" cols="92" rows="15" tabindex="101"
+                                                      data-min-length=""></textarea>
+                                            <div class="grippie bbr-sm" style="margin-right: 0px;"></div>
+                                        </div>
+                                        <div class="s-input-message mt4 d-none js-stacks-validation-message"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <aside class="grid ai-start jc-space-between js-answer-help s-notice s-notice__warning pb0 pr4 pt4 mb8 d-none"
+                                   role="status" aria-hidden="true">
+                                <div class="grid--cell pt8">
+                                    <p>Thanks for contributing an answer to Stack Overflow!</p>
+                                    <ul>
+                                        <li>Please be sure to <em>answer the question</em>. Provide details and share
+                                            your research!
+                                        </li>
+                                    </ul>
+                                    <p>But <em>avoid</em> …</p>
+                                    <ul>
+                                        <li>Asking for help, clarification, or responding to other answers.</li>
+                                        <li>Making statements based on opinion; back them up with references or personal
+                                            experience.
+                                        </li>
+                                    </ul>
+                                    <p>To learn more, see our <a href="/help/how-to-answer">tips on writing great
+                                        answers</a>.</p>
+                                </div>
+                                <button class="grid--cell js-answer-help-close-btn s-btn s-btn__muted fc-dark">
+                                    <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18"
+                                         viewBox="0 0 18 18">
+                                        <path d="M15 4.41L13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9 15 4.41z"></path>
+                                    </svg>
+                                </button>
+                            </aside>
+
+                            <aside class="grid ai-start jc-space-between js-answer-ban s-notice s-notice__danger pb0 pr4 pt4 mb8 d-none"
+                                   role="status" aria-hidden="true">
+                                <div class="grid--cell pt8">
+                                    <p>Some of your past answers have not been well-received, and you're in danger of
+                                        being <a href="/help/answer-bans">blocked from answering</a>.</p>
+                                    <p>Please pay close attention to the following guidance:</p>
+                                    <ul>
+                                        <li>Please be sure to <em>answer the question</em>. Provide details and share
+                                            your research!
+                                        </li>
+                                    </ul>
+                                    <p>But <em>avoid</em> …</p>
+                                    <ul>
+                                        <li>Asking for help, clarification, or responding to other answers.</li>
+                                        <li>Making statements based on opinion; back them up with references or personal
+                                            experience.
+                                        </li>
+                                    </ul>
+                                    <p>To learn more, see our <a href="/help/how-to-answer">tips on writing great
+                                        answers</a>.</p>
+                                </div>
+                                <button class="grid--cell js-answer-ban-close-btn s-btn s-btn__muted fc-dark">
+                                    <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18"
+                                         viewBox="0 0 18 18">
+                                        <path d="M15 4.41L13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9 15 4.41z"></path>
+                                    </svg>
+                                </button>
+                            </aside>
+
+                            <div id="draft-saved" class="fc-success float-left h24" style="display:none;">Draft saved
+                            </div>
+                            <div id="draft-discarded" class="fc-error float-left h24" style="display:none;">Draft
+                                discarded
+                            </div>
+
+                            <div id="wmd-preview" class="wmd-preview"></div>
+                            <div></div>
+                            <div class="edit-block">
+                                <input id="fkey" name="fkey" type="hidden"
+                                       value="9397d31c45dfdf11e8f80398635fe2f4971d184e18c4ef5c537cc2b39286b0b8">
+                                <input id="author" name="author" type="text">
+                            </div>
+
+                        </div>
+                        <div class="ps-relative" id="tag-editor">
+
+                            <script>
+                                StackExchange.using("tagEditor", function () {
+                                    var channelOptions = {
+                                        tags: "".split(" "),
+                                        id: "1"
+                                    };
+                                    initTagRenderer("".split(" "), "".split(" "), channelOptions);
+                                    StackExchange.tagEditor($("#tagnames"), undefined, undefined, {
+                                        responsiveIsh: true,
+                                        useStacksClasses: true,
+                                        columns: 3
+                                    });
+                                    StackExchange.tagEditor.ready.then(function () {
+                                        StackExchange.using("beginEditEvent", function () {
+                                            StackExchange.beginEditEvent.init();
+                                        });
+                                    });
+                                });
+                            </script>
+
+
+                            <div class="js-tag-suggestions hmn0"></div>
+
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid gsx gs4 ai-center mt32">
+                            <button class="grid--cell s-btn s-btn__primary s-btn__icon ws-nowrap js-begin-review-button js-gps-track"
+                                    type="submit" tabindex="120" data-gps-track="askpage.review_click"><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                Sorunuzu inceleyin
+                            </font></font></button>
+                            <button class="grid--cell s-btn s-btn__danger ws-nowrap discard-question dno">Discard
+                                draft
+                            </button>
+                        </div>
+                    </div>
+                    <div class="js-visible-during-review d-none">
+                        <div class="js-show-on-question-only js-show-on-question-and-answer">
+                        </div>
+                        <div class="js-show-on-question-only">
+                            <div class="grid gsx gs4 ai-center mt16">
+                                <button id="submit-button"
+                                        class="grid--cell s-btn s-btn__primary s-btn__icon ws-nowrap js-submit-button"
+                                        type="submit" tabindex="120" autocomplete="off">
+                                    Post your question
+                                </button>
+                                <button class="grid--cell s-btn s-btn__danger ws-nowrap discard-question dno">Discard
+                                    draft
+                                </button>
+                            </div>
+                        </div>
+                        <div class="js-show-on-question-and-answer dno">
+                            <div class="grid gsx gs4 ai-center mt16">
+                                <button id="submit-button-42"
+                                        class="grid--cell s-btn s-btn__primary s-btn__icon ws-nowrap js-submit-button"
+                                        type="submit" tabindex="120" autocomplete="off">
+                                    Post your question and answer
+                                </button>
+                                <button class="grid--cell s-btn s-btn__danger ws-nowrap discard-question dno">Discard
+                                    draft
+                                </button>
+                            </div>
+                        </div>
+                        <div class="js-show-on-question-only js-show-on-question-and-answer">
+                            <div class="js-general-error pt16 fs-body1 fw-bold fc-red-600 mbn16 d-none"></div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+
+            </div>
+            </li>
+
+            </ol>
+        </div>
+    </div>
+    <div class="s-sidebarwidget s-anchors mb24 js-visible-before-review">
+        <div class="s-sidebarwidget--header bbr-sm js-widget-header">
+
+        </div>
+
+        <div class="s-expandable" id="more-helpful-links">
+            <div class="s-expandable--content">
+                <div class="s-sidebarwidget--content d-block bg-white bbr-sm">
+                    <p>
+                        Find more information about <a class="s-link js-gps-track"
+                                                       data-gps-track="askpage.click_guidance_link({target: 'how-to-ask'})"
+                                                       href="/questions/how-to-ask" target="_blank">how to ask a good
+                        question here</a>
+                    </p>
+                    <p class="mb0">
+                        Visit the <a class="s-link js-gps-track"
+                                     data-gps-track="askpage.click_guidance_link({target: 'help'})" href="/help"
+                                     target="_blank">help center</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="js-post-review-summary-container s-sidebarwidget s-anchors js-visible-during-review d-none">
+
+        <div class="js-success-no-warnings grid d-none">
+            <div class="grid--cell mr16">
+                <img width="20" height="20" src="https://cdn.sstatic.net/Img/ask/success.svg?v=b9c8125e2f1c"
+                     alt="Success">
+            </div>
+            <div class="grid--cell mr4">
+                <div class="d-flex ai-center fw-bold" style="min-height: 20px">
+                    <div>Your question is ready to publish!</div>
+                </div>
+                <p class="mt6 mb0">Our automated system checked for ways to improve your question and found none.</p>
+            </div>
+        </div>
+        <div class="js-error-container grid d-none">
+            <div class="grid--cell mr16">
+                <img width="20" height="20" src="https://cdn.sstatic.net/Img/ask/error.svg?v=b373711635d0" alt="Error">
+            </div>
+            <div class="grid--cell mr4">
+                <div class="d-flex ai-center fw-bold" style="min-height: 20px">
+                    <div>Your question couldn’t be submitted</div>
+                </div>
+                <p class="js-error-message mt6 mb0"></p>
+            </div>
+        </div>
+        <div class="js-warning-and-error-separator mxn16 my16 bb bc-black-2 d-none"></div>
+        <div class="js-warning-container d-none">
+            <p class="js-unresolved-warnings-message">Tips to fix your question and improve your chances of getting
+                answers:</p>
+            <p class="js-resolved-warnings-message">Looks like you’re ready to publish!</p>
+            <div class="js-warning-list"></div>
+            <script class="js-warning-template" type="text/html">
+                <div class="js-separator mxn16 my16 bb bc-black-2"></div>
+                <div class="grid">
+                    <div class="grid--cell mr16">
+                        <img class="js-success-icon" width="20" height="20"
+                             src="https://cdn.sstatic.net/Img/ask/success.svg?v=b9c8125e2f1c" alt="Resolved issue"/>
+                        <img class="js-warning-icon" width="20" height="20"
+                             src="https://cdn.sstatic.net/Img/ask/warning.svg?v=336fe0dd3be2" alt="Unresolved issue"/>
+                    </div>
+                    <div class="grid--cell mr4">
+                        <div class="d-flex ai-center fw-bold" style="min-height: 20px">
+                            <div class="js-guidance-title"></div>
+                        </div>
+                        <div class="pt6 js-guidance-body grid fd-column gsy gs8"></div>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="s-expandable">
+        <div class="s-expandable--content"></div>
+    </div>
+    </div>
+
+    <script>
+        StackExchange.ready(function () {
+
+            Stacks.addController('right-rail', {
+
+                targets: ['step'],
+
+                onShow: function (evt) {
+                    this.update($(evt.target), true);
+
+                    if (this.stepTargets.indexOf(evt.target !== -1)) {
+                        this.stepTargets.forEach(function (step) {
+                            if (step !== evt.target && step.getAttribute('aria-expanded') === 'true') {
+                                // DOM click
+                                step.click();
+                            }
+                        });
+                    }
+                },
+
+                onHide: function (evt) {
+                    this.update($(evt.target), false);
+                },
+
+                update: function ($target, visible) {
+                    $target.find('.js-arrow-up').toggleClass('d-none', !visible);
+                    $target.find('.js-arrow-down').toggleClass('d-none', !!visible);
+                    $target.closest('.js-widget-header').toggleClass('bbr-sm', !visible);
+                }
+            });
+        });
+    </script>
+
+    </aside>
+    </div>
+
+    <br class="cbt">
+    <div style="display:none" id="prettify-lang"></div>
+
+
+    </div>
+    </div>
+
+    <footer id="footer" class="site-footer js-footer" role="contentinfo">
+    </footer>
+
+    <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+        <div style="padding: 8px;">
+            <div>
+                <div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png"
+                                       width="20" height="20" alt="Google Çeviri"></div>
+            </div>
+        </div>
+        <div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Orijinal metin</h1>
+        </div>
+        <div class="middle" style="padding: 8px;">
+            <div class="original-text"></div>
+        </div>
+        <div class="bottom" style="padding: 8px;">
+            <div class="activity-links"><span class="activity-link">Daha iyi bir çeviri ile katkıda bulunun</span><span
+                    class="activity-link"></span></div>
+            <div class="started-activity-container">
+                <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+                <div class="activity-root"></div>
+            </div>
+        </div>
+        <div class="status-message" style="display: none;"></div>
+    </div>
+    <div class="goog-te-spinner-pos">
+        <div class="goog-te-spinner-animation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px"
+                 viewBox="0 0 66 66">
+                <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+                        r="30"></circle>
+            </svg>
+        </div>
+    </div>
+    </body>
+    </html>
+
+    </html>
+{% endblock content %}
+

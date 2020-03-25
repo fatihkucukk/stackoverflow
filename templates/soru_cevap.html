@@ -1,0 +1,602 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html itemscope="" itemtype="http://schema.org/QAPage" class="html__responsive translated-ltr"><head>
+
+        <title>Soru Sayfamız</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+        <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="search" type="application/opensearchdescription+xml" title="Yığın Taşması" href="/opensearch.xml">
+        <link rel="canonical" href="https://stackoverflow.com/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://stackoverflow.com/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c">
+        <meta property="og:site_name" content="Stack Overflow">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:domain" content="stackoverflow.com">
+        <meta name="twitter:title" property="og:title" itemprop="name" content="How to implement test data in JSON file in data-driven unit test in .NET using C#">
+        <meta name="twitter:description" property="og:description" itemprop="description" content="I was doing unit test using xUnit package for my class library. I would like to try on JSON approach rather than normal object approach for data-driven unit test. However I don't see anywhere that ...">
+
+        <script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://cdn.ampproject.org/rtv/012002141856310/amp4ads-host-v0.js"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2020022401.js"></script><script src="https://rules.quantcount.com/rules-p-c1rF4kxgLUzNc.js" async=""></script><script async="" src="https://secure.quantserve.com/quant.js"></script><script async="" src="https://sb.scorecardresearch.com/beacon.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.sstatic.net/Js/stub.en.js?v=2b995191bf00"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=f6dc2e55f461">
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=3b9bab7da4ab">
+
+
+            <link rel="alternate" type="application/atom+xml" title="'C # kullanarak .NET'te veri odaklı birim testinde JSON dosyasındaki test verileri nasıl uygulanır?' Sorusu için feed" href="/feeds/question/60473360">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+
+
+    <script async="" src="https://cdn.sstatic.net/Js/full.en.js?v=88944aa3c051"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><link rel="stylesheet" href="https://cdn.sstatic.net/clc/styles/clc.min.css?v=c4f5b80d56c6" type="text/css"><link rel="preload" href="https://adservice.google.com.tr/adsid/integrator.js?domain=stackoverflow.com" as="script"><script type="text/javascript" src="https://adservice.google.com.tr/adsid/integrator.js?domain=stackoverflow.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=stackoverflow.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=stackoverflow.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020022401.js" async=""></script><script async="" src="https://cdn.sstatic.net/Js/post-validation.en.js?v=79fc7755c49f"></script><script async="" src="https://cdn.sstatic.net/Js/prettify-full.en.js?v=2bf8cfdd9e70"></script><script async="" src="https://cdn.sstatic.net/Js/wmd.en.js?v=7f0dc15875d5"></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"><style type="text/css"> .wmd-snippet-button span { background-position: 0 0; } .wmd-snippet-button:hover span { background-position: 0 -40px; }</style></head>
+        <body class="question-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<header class="top-bar js-top-bar top-bar__network _fixed">
+    <div class="wmx12 mx-auto grid ai-center h100" role="menubar">
+        <div class="-main grid--cell">
+                <a href="#" class="left-sidebar-toggle p0 ai-center jc-center js-left-sidebar-toggle" role="menuitem" aria-haspopup="true" aria-controls="left-sidebar" aria-expanded="false"><span class="ps-relative"></span></a>
+                <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno">
+                    <div class="left-sidebar js-unpinned-left-sidebar" data-can-be="left-sidebar" data-is-here-when="sm"></div>
+                </div>
+                                <a href="http://127.0.0.1:8000/" class="-logo js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:8})">
+                        <span class="-img _glyph"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yığın Taşması</font></font></span>
+                    </a>
+
+
+
+        </div>
+
+            <ol class="list-reset grid gs4" role="presentation">
+                <li class="grid--cell">
+                    <a href="#" class="-marketing-link js-gps-track js-products-menu" aria-controls="products-popover" data-controller="s-popover" data-action="s-popover#toggle" data-s-popover-placement="bottom" data-gps-track="top_nav.products.click({location:2, destination:1})" data-ga="[&quot;top navigation&quot;,&quot;products menu click&quot;,null,null,null]"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Ürün:% s
+                    </font></font></a>
+                </li>
+
+            </ol>
+            <div class="s-popover ws2 p6" id="products-popover" role="menu" aria-hidden="true">
+                <div class="s-popover--arrow"></div>
+                <ol class="list-reset s-anchors s-anchors__inherit">
+                    <li>
+                        <a href="/" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:2})" data-ga="[&quot;top navigation&quot;,&quot;public qa submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yığın Taşması </font></font></span>
+                            <span class="fs-caption d-block o70"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Herkese açık sorular ve cevaplar</font></font></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/teams" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:3})" data-ga="[&quot;top navigation&quot;,&quot;teams submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Takımlar </font></font></span>
+                            <span class="fs-caption d-block o70"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ekibiniz için özel sorular ve cevaplar</font></font></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/enterprise" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:4})" data-ga="[&quot;top navigation&quot;,&quot;enterprise submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kurumsal </font></font></span>
+                            <span class="fs-caption d-block o70"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kendi işletmeniz için özel olarak barındırılan sorular ve yanıtları</font></font></span>
+                        </a>
+                    </li>
+                    <li class="bt bc-black-3 mln6 mrn6 mt6 pt6 px6">
+                        <a href="https://stackoverflow.com/talent" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:5})" data-ga="[&quot;top navigation&quot;,&quot;talent submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yetenek </font></font></span>
+                            <span class="fs-caption d-block o70"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kiralama teknik yetenek</font></font></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/advertising" class="d-block py6 px6 bar-sm h:bg-orange-500 h:fc-white js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:6})" data-ga="[&quot;top navigation&quot;,&quot;advertising submenu click&quot;,null,null,null]">
+                            <span class="fs-body1 d-block">Advertising</span>
+                            <span class="fs-caption d-block o70">Reach developers worldwide</span>
+                        </a>
+                    </li>
+
+                        <li class="bt bc-black-3 mln6 mrn6 mt6 pt6 px6">
+                            <a href="/teams/customers" class="fc-light d-block py6 px6 h:fc-orange-500 js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:7})" data-ga="[&quot;top navigation&quot;,&quot;customers submenu click&quot;,null,null,null]">Customers</a>
+                        </li>
+                        <li class="">
+                            <a href="/teams/use-cases" class="fc-light d-block py6 px6 h:fc-orange-500 js-gps-track" data-gps-track="top_nav.products.click({location:2, destination:8})" data-ga="[&quot;top navigation&quot;,&quot;use cases submenu click&quot;,null,null,null]">Use cases</a>
+                        </li>
+                </ol>
+            </div>
+
+            <form id="search" role="search" action="/search" method="get" class="grid--cell fl-grow1 searchbar px12 js-searchbar " autocomplete="off">
+                    <div class="ps-relative">
+                        <input name="q" type="text" placeholder="Arama…" value="" autocomplete="off" maxlength="240" class="s-input s-input__search js-search-field " aria-label="Arama" aria-controls="top-search" data-controller="s-popover" data-action="focus->s-popover#show" data-s-popover-placement="bottom-start">
+                        <svg aria-hidden="true" class="svg-icon s-input-icon s-input-icon__search iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="M18 16.5l-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0z"></path></svg>
+<div class="s-popover p0 wmx100 wmn4 sm:wmn-initial js-top-search-popover s-popover--arrow__tl" id="top-search" role="menu">
+    <div class="js-spinner p24 grid ai-center jc-center d-none">
+        <div class="s-spinner s-spinner__sm fc-orange-400">
+            <div class="v-visible-sr">Loading…</div>
+        </div>
+    </div>
+
+    <span class="v-visible-sr js-screen-reader-info"></span>
+    <div class="js-ac-results overflow-y-auto hmx3 d-none"></div>
+
+    <div class="js-search-hints" aria-describedby="Tips for searching"></div>
+</div>
+                    </div>
+            </form>
+
+
+
+    </div>
+</header>
+
+
+
+    <div class="container">
+
+
+
+        <div id="content" class="snippet-hidden">
+
+
+<div itemprop="mainEntity" itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+    <div class="inner-content clearfix">
+
+
+                    <div id="question-title" class="grid sm:fd-column">
+                        <h1 itemprop="name" class="grid--cell fs-headline1 fl1 ow-break-word mb8"><a href="/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c" class="question-hyperlink"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ question.title }}</font></font></a></h1>
+
+                <div class="ml12 aside-cta grid--cell print:d-none sm:ml0 sm:mb12 sm:order-first sm:as-end">
+
+    <a href="/soru-olustur/" class="ws-nowrap s-btn s-btn__primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Soru sor
+    </font></font></a>
+
+                </div>
+            </div>
+            <div class="grid fw-wrap pb8 mb16 bb bc-black-2">
+                    <div class="grid--cell ws-nowrap mr16 mb8" title="{{ question.created_date }}">
+                        <span class="fc-light mr2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ question.created_date }} tarihinde sordu</font></font></span>
+                        <time itemprop="dateCreated" datetime="2020-03-01T08:37:54"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dün</font></font></time>
+                    </div>
+
+
+            </div>
+                    <div id="mainbar" role="main" aria-label="soru ve cevaplar">
+
+
+
+<div class="question" data-questionid="60473360" id="question">
+
+
+    <style>.everyoneloves__top-leaderboard:empty,.everyoneloves__mid-leaderboard:empty,.everyoneloves__bot-mid-leaderboard:empty{
+            margin-bottom:0;
+}
+</style>
+<div id="dfp-tlb" class="everyonelovesstackoverflow everyoneloves__top-leaderboard" data-dfp-zone="true" style="display: none; min-height: auto; height: auto;" data-google-query-id="CP-Vh57H--cCFTVc5QodB2QAXA" data-clc-ready="true"><div id="google_ads_iframe_/248424177/stackoverflow.com/lb/question-pages_0__container__" style="border: 0pt none; width: 728px; height: auto; min-height: auto; display: none;"></div></div>
+    <div class="post-layout">
+
+        <div class="votecell post-layout--left">
+
+            <div class="js-voting-container grid fd-column ai-stretch gs4 fc-black-200" data-post-id="60473360">
+            <a href="{% url 'soru_oy_kullan' id=question.id %}" class="js-vote-up-btn grid--cell s-btn s-btn__unset c-pointer oy_yukari" id="" title=" oy" aria-pressed="false" aria-label="yukarı oy" data-selected-classes="fc-theme-primary"><svg aria-hidden="true" class="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10 2 26z"></path></svg></a>
+            <div class="js-vote-count grid--cell fc-black-500 fs-title grid fd-column ai-center" itemprop=" oy" data-value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></div>
+            <button class="js-vote-down-btn grid--cell s-btn s-btn__unset c-pointer" title=" oy" aria-pressed="false" aria-label="aşağı oy" data-selected-classes="fc-theme-primary"><svg aria-hidden="true" class="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26 2 10z"></path></svg></button>
+
+            <button class="js-favorite-btn s-btn s-btn__unset c-pointer py4 js-gps-track" aria-pressed="false" aria-label="favori" data-selected-classes="fc-yellow-600" data-gps-track="post.click({ item: 1, priv: -1, post_type: 1 })" title="Favori soru olarak işaretlemek için tıklayın (geri almak için tekrar tıklayın)">
+            <svg aria-hidden="true" class="svg-icon iconStar" width="18" height="18" viewBox="0 0 18 18"><path d="M9 12.65l-5.29 3.63 1.82-6.15L.44 6.22l6.42-.17L9 0l2.14 6.05 6.42.17-5.1 3.9 1.83 6.16L9 12.65z"></path></svg>
+            <div class="js-favorite-count mt4 d-none" data-value=""></div>
+            </button>
+
+
+        <a class="js-post-issue grid--cell s-btn s-btn__unset c-pointer py8 mx-auto" href="/posts/60473360/timeline" data-shortcut="T" title="Zaman çizelgesi"><svg aria-hidden="true" class="svg-icon mln2 mr0 iconHistory" width="19" height="18" viewBox="0 0 19 18"><path d="M3 9a8 8 0 1 1 3.73 6.77L8.2 14.3A6 6 0 1 0 5 9l3.01-.01-4 4-4-4h3L3 9zm7-4h1.01L11 9.36l3.22 2.1-.6.93L10 10V5z"></path></svg></a>
+
+        </div>
+
+        </div>
+
+<div class="postcell post-layout--right">
+
+    <div class="questions-text" itemprop="text">
+        <p>{{ question.text }}</p>
+    </div>
+
+        <div class="post-taglist grid gs4 gsy fd-column">
+            <div class="grid ps-relative d-block">
+                <a href="/questions/tagged/c%23" class="post-tag js-gps-track" title="'c #' etiketli soruları göster" rel="tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">c # </font></font></a> <a href="/questions/tagged/.net" class="post-tag js-gps-track" title="'.net' etiketli soruları göster" rel="tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.net </font></font></a> <a href="/questions/tagged/json" class="post-tag js-gps-track" title="'json' etiketli soruları göster" rel="tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">json </font></font></a> <a href="/questions/tagged/unit-testing" class="post-tag js-gps-track" title="'birim testi' etiketli soruları göster" rel="tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">birim testi </font></font></a> <a href="/questions/tagged/xunit" class="post-tag js-gps-track" title="" rel="tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">xunit</font></font></a>
+            </div>
+        </div>
+
+    <div class="mb0 ">
+        <div class="mt16 grid gs8 gsy fw-wrap jc-end ai-start pt4">
+            <div class="grid--cell mr16" style="flex: 1 1 100px;">
+                <div class="post-menu"><a href="/q/60473360/12838998" rel="nofollow" itemprop="url" class="js-share-link js-gps-track" title="bu soruya kısa kalıcı bağlantı" data-gps-track="post.click({ item: 2, priv: -1, post_type: 1 })" data-controller="se-share-sheet s-popover" data-se-share-sheet-title="Share a link to this question" data-se-share-sheet-subtitle="(includes your user id)" data-se-share-sheet-post-type="question" data-se-share-sheet-social="facebook twitter devto" data-se-share-sheet-location="1" data-s-popover-placement="bottom-start" aria-controls="se-share-sheet-0" data-action=" s-popover#toggle se-share-sheet#preventNavigation s-popover:show->se-share-sheet#willShow s-popover:shown->se-share-sheet#didShow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><a href="/posts/60473360/edit" class="suggest-edit-post js-gps-track" data-gps-track="post.click({ item: 6, priv: -1, post_type: 1 })" title="bu yayını revize et ve geliştir"><font style="vertical-align: inherit;">düzenlemeyi </font></a><a href="/q/60473360/12838998" rel="nofollow" itemprop="url" class="js-share-link js-gps-track" title="bu soruya kısa kalıcı bağlantı" data-gps-track="post.click({ item: 2, priv: -1, post_type: 1 })" data-controller="se-share-sheet s-popover" data-se-share-sheet-title="Share a link to this question" data-se-share-sheet-subtitle="(includes your user id)" data-se-share-sheet-post-type="question" data-se-share-sheet-social="facebook twitter devto" data-se-share-sheet-location="1" data-s-popover-placement="bottom-start" aria-controls="se-share-sheet-0" data-action=" s-popover#toggle se-share-sheet#preventNavigation s-popover:show->se-share-sheet#willShow s-popover:shown->se-share-sheet#didShow"><font style="vertical-align: inherit;">paylaş</font></a></font><div class="s-popover z-dropdown" style="width: unset; max-width: 28em;" id="se-share-sheet-0"><div class="s-popover--arrow"></div><div><span class="js-title fw-bold">Share a link to this question</span> <span class="js-subtitle">(includes your user id)</span></div><div class="my8"><input type="text" class="js-input s-input wmn3 sm:wmn-initial" readonly=""></div><div class="d-flex jc-space-between mbn4"><button class="js-copy-link-btn s-btn s-btn__link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bağlantıyı kopyala</font></font></button><div class="js-social-container"></div></div></div><span class="lsep"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|</font></font></span><a href="/posts/60473360/edit" class="suggest-edit-post js-gps-track" data-gps-track="post.click({ item: 6, priv: -1, post_type: 1 })" title="bu yayını revize et ve geliştir"><font style="vertical-align: inherit;"></font></a></div>
+            </div>
+
+            <div class="post-signature owner grid--cell">
+<div class="user-info user-hover">
+    <div class="user-action-time"><font style="vertical-align: inherit;"><span title="{{ question.created_date }} tarihinde sordu" class="relativetime">{{ question.created_date }}</span><font style="vertical-align: inherit;">
+        sordu</font></font><span title="2020-03-01 08: 37: 54Z" class="relativetime"><font style="vertical-align: inherit;"></font></span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/5374980/silver-archer"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/45e8a9977c2c59d16fb1a78297cd83a2?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32" class="bar-sm"></div></a>
+    </div>
+    <div class="user-details" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <a href="fatih"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fatih Küçük</font></font></a><span class="d-none" itemprop="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gümüş Okçu</font></font></span>
+        <div class="-flair">
+            <span class="reputation-score" title="itibar puanı " dir="ltr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">99</font></font></span><span title="1 altın rozet" aria-hidden="true"><span class="badge1"></span><span class="badgecount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span></span><span class="v-visible-sr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 1 altın rozet</font></font></span><span title="2 gümüş rozet" aria-hidden="true"><span class="badge2"></span><span class="badgecount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></span></span><span class="v-visible-sr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2 gümüş rozet</font></font></span><span title="12 bronz rozeti" aria-hidden="true"><span class="badge3"></span><span class="badgecount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></span></span><span class="v-visible-sr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 12 bronz rozet</font></font></span>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div class="post-layout--right">
+        <div id="comments-60473360" class="comments js-comments-container bt bc-black-2 mt12  dno" data-post-id="60473360" data-min-length="15">
+            <ul class="comments-list js-comments-list" data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+            </ul>
+	    </div>
+
+        <div id="comments-link-60473360" data-rep="50" data-reg="true">
+
+                    <a class="js-add-link comments-link disabled-link" title="Daha fazla bilgi istemek veya iyileştirme önermek için yorumları kullanın.  Yorumlarda soruları yanıtlamaktan kaçının." href="#" role="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yorum ekle</font></font></a>
+                <span class="js-link-separator dno"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;|&nbsp;</font></font></span>
+            <a class="js-show-link comments-link dno" title="bu yayındaki tüm yorumları göstermek için genişlet" href="#" onclick="" role="button"></a>
+        </div>
+    </div>            </div>
+</div>
+
+
+<div id="dfp-isb" class="everyonelovesstackoverflow everyoneloves__inline-sidebar" style="min-height: auto; height: auto; display: none;"></div>
+
+        <div id="answers">
+
+
+
+
+                    <a name="tab-top"></a>
+                    <div id="answers-header">
+                        <div class="subheader answers-subheader">
+                            <h2 data-answercount="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    1 cevap
+                                </font></font><span style="display:none;" itemprop="answerCount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span>
+                            </h2>
+                            <div>
+
+<div id="tabs">
+        <a href="/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c?answertab=active#tab-top" data-nav-xhref="" title="İlk olarak en son etkinliğe sahip yanıtlar" data-value="active" data-shortcut="A"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            aktif </font></font></a>
+        <a href="/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c?answertab=oldest#tab-top" data-nav-xhref="" title="Yanıtlar verildikleri sırayla" data-value="oldest" data-shortcut="O"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            en eski </font></font></a>
+        <a class="youarehere is-selected " href="/questions/60473360/how-to-implement-test-data-in-json-file-in-data-driven-unit-test-in-net-using-c?answertab=votes#tab-top" data-nav-xhref="" title="İlk önce en yüksek puanı alan cevaplar" data-value="votes" data-shortcut="V"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            oylar</font></font></a>
+    </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+<a name="60473421"></a>
+<div id="answer-60473421" class="answer accepted-answer" data-answerid="60473421" itemprop="acceptedAnswer" itemscope="" itemtype="http://schema.org/Answer">
+    <div class="post-layout">
+        <div class="votecell post-layout--left">
+        <div class="js-voting-container grid fd-column ai-stretch gs4 fc-black-200"><div class="form-submit cbt grid gsx gs4">
+        <a href="{% url 'cevap_oy_kullan' id=question.id %}" class="js-vote-up-btn grid--cell s-btn s-btn__unset c-pointer"  title="oyver" aria-pressed="false" aria-label="yukarı oy" data-selected-classes="fc-theme-primary"><svg aria-hidden="true" class="svg-icon m0 iconArrowUpLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 26h32L18 10 2 26z"></path></svg></button>
+        <div class="js-vote-count grid--cell fc-black-500 fs-title grid fd-column ai-center" itemprop="" data-value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ cevap.get_oy_count }}</font></font></div>
+        <button class="js-vote-down-btn grid--cell s-btn s-btn__unset c-pointer" title="Bu cevap faydalı değil" aria-pressed="false" aria-label="aşağı oy" data-selected-classes="fc-theme-primary"><svg aria-hidden="true" class="svg-icon m0 iconArrowDownLg" width="36" height="36" viewBox="0 0 36 36"><path d="M2 10h32L18 26 2 10z"></path></svg></button>
+
+
+         <a class="js-post-issue grid--cell s-btn s-btn__unset c-pointer py8 mx-auto" href="/posts/60473421/timeline" data-shortcut="T" title="Zaman çizelgesi"><svg aria-hidden="true" class="svg-icon mln2 mr0 iconHistory" width="19" height="18" viewBox="0 0 19 18"><path d="M3 9a8 8 0 1 1 3.73 6.77L8.2 14.3A6 6 0 1 0 5 9l3.01-.01-4 4-4-4h3L3 9zm7-4h1.01L11 9.36l3.22 2.1-.6.93L10 10V5z"></path></svg></a>
+
+</div>
+
+        </div>
+
+
+
+
+<div class="answercell post-layout--right">
+
+    <div class="question-cevaplar" itemprop="cevaplar">
+
+
+            {% for cevap in question.cevaplar.all %}
+            <p>{{ forloop.counter }} - {{ cevap.icerik }}</p>
+            {% endfor %}
+
+
+    </div>
+    <div class="grid mb0 fw-wrap ai-start jc-end gs8 gsy">
+        <time itemprop="dateCreated" datetime="2020-03-01T08:47:31"></time>
+
+    <div class="post-signature grid--cell fl0">
+<div class="user-info ">
+    <div class="created_date">
+        <a href="/posts/60473421/revisions" title= class="js-gps-track" data-gps-track="post.click({ item: 4, priv: -1, post_type: 2 })"><font style="vertical-align: inherit;"><span title="{{ question.created_date }}" class="relativetime">{{ question.created_date }} cevaplandı<font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font></font><span title="" class="relativetime"><font style="vertical-align: inherit;"></font></span></a>
+    </div>
+    <div class="user-gravatar32">
+
+    </div>
+    <div class="user-details">
+
+        <div class="-flair">
+
+        </div>
+    </div>
+</div>    </div>
+
+
+
+    <div class="post-signature grid--cell fl0">
+<div class="user-info user-hover">
+    <div class="user-action-time"><font style="vertical-align: inherit;"><span title="2020-03-01 08: 47: 31Z" class="relativetime"><font style="vertical-align: inherit;">{{ question.created_date }}</font></span><font style="vertical-align: inherit;">
+        cevaplandı</font></font><span title="2020-03-01 08: 47: 31Z" class="relativetime"><font style="vertical-align: inherit;"></font></span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4728685/pavel-anikhouski"><div class="gravatar-wrapper-32"><img src="klasör/fotoğraf fatih.png" alt="" width="32" height="32" class="bar-sm"></div></a>
+    </div>
+    <div class="user-details" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <a href="/users/4728685/pavel-anikhouski"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fatih Kucuk</font></font></a><span class="d-none" itemprop="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pavel Anikhouski</font></font></span>
+        <div class="-flair">
+            <span class="reputation-score" title="itibar puanı " dir="ltr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9425</font></font></span><span title="10 altın rozet" aria-hidden="true"><span class="badge1"></span><span class="badgecount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></span></span><span class="v-visible-sr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 10 altın rozet</font></font></span><span title="20 gümüş rozet" aria-hidden="true"><span class="badge2"></span><span class="badgecount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></span></span><span class="v-visible-sr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 20 gümüş rozet</font></font></span><span title="33 bronz rozeti" aria-hidden="true"><span class="badge3"></span><span class="badgecount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">33</font></font></span></span><span class="v-visible-sr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 33 bronz rozetler</font></font></span>
+        </div>
+    </div>
+</div>
+
+    </div>
+    </div>
+
+</div>
+
+
+
+    <div class="post-layout--right">
+        <div id="comments-60473421" class="comments js-comments-container bt bc-black-2 mt12 " data-post-id="60473421" data-min-length="15">
+            <ul class="comments-list js-comments-list" data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+    <li id="comment-106982045" class="comment js-comment " data-comment-id="106982045">
+        <div class="js-comment-actions comment-actions">
+            <div class="comment-score js-comment-edit-hide">
+            </div>
+                    </div>
+        <div class="comment-text js-comment-text-and-form">
+            <div class="comment-body js-comment-edit-hide">
+
+                <span class="comment-copy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font><font style="vertical-align: inherit;"></font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                    -&nbsp; </font></font><a href="/users/5374980/silver-archer" title="99 itibar" class="comment-user owner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fatih Küçük</font></font></a>
+                     </div>
+        </div>
+    </li>
+            </ul>
+	    </div>
+
+
+    </div>    </div>
+</div>
+
+
+<div id="dfp-bmlb" class="everyonelovesstackoverflow everyoneloves__bot-mid-leaderboard" data-dfp-zone="true" style="display: none; min-height: auto; height: auto;" data-google-query-id="CIGWh57H--cCFTVc5QodB2QAXA" data-clc-ready="true"><div id="google_ads_iframe_/248424177/stackoverflow.com/bmlb/question-pages_0__container__" style="border: 0pt none; width: 728px; height: auto; min-height: auto; display: none;"></div></div>
+                        <a name="new-answer"></a>
+                            <form id="cevap-form" action="{% url "cevap_detay" id=question.id %}" method="POST" class="js-add-answer-component cevap-form">
+                                {% csrf_token %}
+                                <input type="hidden" id="cevap-id" value="60473360">
+                                <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                                <input type="hidden" name="referrer" value="http://127.0.0.1:8000/">
+                                <h2 class="space"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    senin cevabın
+                                </font></font></h2>
+
+
+
+                        </ul>
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div class="ps-relative">
+
+        <div class="wmd-container mb8">
+
+    <div class="mdhelp-tab" id="mdhelp-lists">
+        <div class="mdhelp-tab--content">
+            <p>Both bulleted and numbered lists are possible:</p>
+            <div class="col1">
+<pre>-<span class="spaces">&nbsp;</span>Use a minus sign for a bullet<font></font>
++<span class="spaces">&nbsp;</span>Or plus sign<font></font>
+*<span class="spaces">&nbsp;</span>Or an asterisk<font></font>
+<font></font>
+1.<span class="spaces">&nbsp;</span>Numbered lists are easy<font></font>
+2.<span class="spaces">&nbsp;</span>Markdown keeps track of<font></font>
+   the numbers for you<font></font>
+7.<span class="spaces">&nbsp;</span>So this will be item 3.
+</pre>
+            </div>
+            <div class="col2">
+<pre>1.<span class="spaces">&nbsp;</span>Lists in a list item:
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>-<span class="spaces">&nbsp;</span>Indented four spaces.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>*<span class="spaces">&nbsp;</span>indented eight spaces.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>-<span class="spaces">&nbsp;</span>Four spaces again.<font></font>
+2.<span class="spaces">&nbsp;&nbsp;</span>You can have multiple
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>paragraphs in a list items.
+<span class="spaces">&nbsp;</span>
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>Just be sure to indent.
+</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-blockquotes">
+        <div class="mdhelp-tab--content">
+            <div class="col1">
+                <pre>&gt; Create a blockquote by<font></font>
+&gt; prepending “&gt;” to each line.<font></font>
+&gt;<font></font>
+&gt; Other formatting also works here, e.g.<font></font>
+&gt;<font></font>
+&gt; 1. Lists or<font></font>
+&gt; 2. Headings:<font></font>
+&gt;<font></font>
+&gt; ## Quoted Heading ##<font></font>
+</pre>
+            </div>
+            <div class="col2">
+                <p>
+                    You can even put blockquotes in blockquotes:
+                </p>
+                <pre>&gt; A standard blockquote is indented<font></font>
+&gt; &gt; A nested blockquote is indented more<font></font>
+&gt; &gt; &gt; &gt; You can nest to any depth.<font></font>
+</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-code">
+        <div class="mdhelp-tab--content">
+            <p>
+                To create code blocks or other preformatted text, indent by four spaces or surround with groups of backticks:
+            </p>
+            <pre><span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>This will be displayed in a monospaced font. The first four spaces
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>will be stripped off, but all other whitespace will be preserved.<font></font>
+<font></font>
+```<font></font>
+Markdown and HTML are turned off in code blocks:<font></font>
+&lt;i&gt;This is not italic&lt;/i&gt;, and [this is not a link](https://example.com)<font></font>
+```</pre>
+            <p>
+                To create not a block, but an inline code span, use backticks:
+            </p>
+            <pre>The `$` character is just a shortcut for `window.jQuery`.
+</pre>
+            <p>
+                If you want to have a preformatted block within a list, indent by eight spaces:
+            </p>
+            <pre>1. This is normal text.<font></font>
+2. So is this, but now follows a code block:<font></font>
+<span class="spaces">&nbsp;</span>
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Skip a line and indent eight spaces.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>That's four spaces for the list
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>and four to trigger the code block.
+</pre>
+        </div>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-html">
+        <div class="mdhelp-tab--content">
+            <p>
+                If you need to do something that Markdown can't handle, use HTML. Note that <a href="https://meta.stackexchange.com/questions/1777/what-html-tags-are-allowed" target="_blank">we only support a very strict subset of HTML!</a>
+            </p>
+            <pre>Strikethrough humor is &lt;strike&gt;funny&lt;/strike&gt;.
+</pre>
+            <p>
+                Markdown is smart enough not to mangle your span-level HTML:
+            </p>
+            <pre>&lt;b&gt;Markdown works *fine* in here.&lt;/b&gt;
+</pre>
+            <p>
+                Block-level HTML elements have a few restrictions:
+            </p>
+            <ol>
+                <li>They must be separated from surrounding text by blank lines.</li>
+                <li>The begin and end tags of the outermost block element must not be indented.</li>
+                <li>Markdown can't be used within HTML blocks.</li>
+            </ol>
+            <br>
+            <pre>&lt;pre&gt;<font></font>
+    You can &lt;em&gt;not&lt;/em&gt; use Markdown in here.<font></font>
+&lt;/pre&gt;<font></font>
+</pre>
+        </div>
+    </div>
+
+    <div class="cbt"></div>
+</div>
+            <div class="js-stacks-validation">
+                <div class="ps-relative">
+                    <textarea id="wmd-input" name="icerik" class="wmd-input s-input bar0 js-post-body-field processed" data-post-type-id="2" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+                <div class="grippie bbr-sm" style="margin-right: 0px;"></div></div>
+                <div class="s-input-message mt4 d-none js-stacks-validation-message"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="grid--cell js-answer-help-close-btn s-btn s-btn__muted fc-dark">
+        <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18" viewBox="0 0 18 18"><path d="M15 4.41L13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9 15 4.41z"></path></svg>
+    </button>
+</aside>
+
+<aside class="grid ai-start jc-space-between js-answer-ban s-notice s-notice__danger pb0 pr4 pt4 mb8 d-none" role="status" aria-hidden="true">
+    <div class="grid--cell pt8">
+        <p>Some of your past answers have not been well-received, and you're in danger of being <a href="/help/answer-bans">blocked from answering</a>.</p><p>Please pay close attention to the following guidance:</p><ul><li>Please be sure to <em>answer the question</em>. Provide details and share your research!</li></ul><p>But <em>avoid</em> …</p><ul><li>Asking for help, clarification, or responding to other answers.</li><li>Making statements based on opinion; back them up with references or personal experience.</li></ul><p>To learn more, see our <a href="/help/how-to-answer">tips on writing great answers</a>.</p>
+    </div>
+    <button class="grid--cell js-answer-ban-close-btn s-btn s-btn__muted fc-dark">
+        <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18" viewBox="0 0 18 18"><path d="M15 4.41L13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9 15 4.41z"></path></svg>
+    </button>
+</aside>
+
+    <div id="draft-saved" class="fc-success float-left h24" style="display:none;">Draft saved</div>
+    <div id="draft-discarded" class="fc-error float-left h24" style="display:none;">Draft discarded</div>
+
+
+
+        <div id="wmd-preview" class="wmd-preview"></div>
+        <div></div>
+            <div class="edit-block">
+            <input id="fkey" name="fkey" type="hidden" value="9397d31c45dfdf11e8f80398635fe2f4971d184e18c4ef5c537cc2b39286b0b8">
+            <input id="author" name="author" type="text">
+        </div>
+
+</div>
+
+                                <div class="ps-relative">
+
+
+                                </div>
+
+                                                                    <div class="form-submit cbt grid gsx gs4">
+                                                                        <a class="ws" class="ws-nowrap s-btn s-btn__primary" method="POST">
+                                        <button id="submit-button" class="grid--cell s-btn s-btn__primary s-btn__icon" type="submit" tabindex="120" autocomplete="off"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            Yanıtınızı Gönderin                                        </font></font></button></a>
+
+                                    </div>
+
+                            </form>
+
+
+            </div>
+
+
+    </ul>
+
+
+</div>
+
+
+            </div>
+    </div>
+
+        </div>
+    </div>
+
+ </div>
+
+ {% endblock content %}
